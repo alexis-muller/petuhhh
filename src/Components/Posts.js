@@ -46,16 +46,6 @@ const Posts = ({ token }) => {
 
   return (
     <>
-      {/* <h2>Search</h2>
-      <input
-        className="search"
-        type="text"
-        placeholder="Search Stranger's Things"
-        value={searchTerm}
-        onChange={(event) => setSearchTerm(event.target.value)}
-      /> */}
-      {/* <AddPost token={token} posts={posts} setPosts={setPosts} /> */}
-
       <div className="posts">
         {filteredPosts.length > 0 ? (
           filteredPosts.map(

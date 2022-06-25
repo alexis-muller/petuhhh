@@ -67,9 +67,6 @@ input[type="text"]:focus {
 }
 
 .posts {
-  /* display: grid;
-  grid-gap: 50px 100px;
-  grid-template-columns: auto auto auto; */
   padding: 10px;
   margin: 0 auto;
   width: min(1000px, calc(70% + 100px));
@@ -77,9 +74,7 @@ input[type="text"]:focus {
 
 .post {
   background-color: white;
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   border-radius: 3%;
-  /* padding: 20px; */
   text-align: left;
 }
 
