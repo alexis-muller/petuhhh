@@ -1,0 +1,82 @@
+.addPostForm {
+  padding: 10px 18px;
+  background-color: white;
+  display: flex;
+  left: 15vh;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  -webkit-transition: height 0.35s ease-in-out;
+  transition: height 0.35s ease-in-out;
+}
+
+.addInput {
+  width: 250px;
+  height: 30px;
+  -webkit-transition: height 0.35s ease-in-out;
+  transition: height 0.35s ease-in-out;
+}
+.addInput:focus {
+  height: 50px;
+}
+
+.bottomInput {
+  margin-top: 7px;
+}
+
+.loginButton {
+  margin-top: 7px;
+  background-color: #2874cc;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+.loginButton {
+  cursor: pointer;
+}
+
+.delivery :focus {
+  display: none;
+}
+
+.deliveryLabel :focus {
+  display: none;
+}
+
+input[type="text"] {
+  width: 200px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 260px;
+}
+
+.messageInput {
+  border-radius: 5px;
+}
+.search {
+  padding: 10px 0px 10px 20px;
+  display: flex;
+  left: 15vh;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.posts {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: 0 auto;
+  width: min(1000px, calc(70% + 100px));
+}
+
+.post {
+  background-color: white;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  border-radius: 3%;
+  /* padding: 20px; */
+  text-align: left;
+}
