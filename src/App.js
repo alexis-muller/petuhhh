@@ -2,7 +2,7 @@
 
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
-import { Posts, Login, Register, Profile } from "./Components";
+import { Posts, Login, Register, Profile, AddPost } from "./Components";
 import React, { useState, useEffect } from "react";
 import { getUser } from "./api";
 
@@ -63,6 +63,9 @@ function App() {
             <Link to="/profile" className="headerColor">
               Profile
             </Link>
+            <Link to="/addPost" className="headerColor">
+              Add Post
+            </Link>
           </div>
           {/* <div className="reg">
             {Object.keys(user).length > 0 ? null : (
@@ -85,6 +88,10 @@ function App() {
           <Route
             path="/profile"
             element={<Profile token={token} user={user} />}
+          />
+          <Route
+            path="/addPost"
+            element={<AddPost token={token} user={user} />}
           />
         </Routes>
       </div>

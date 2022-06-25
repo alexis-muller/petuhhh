@@ -34,7 +34,7 @@ export const login = async (username, password) => {
   const {
     data: { token },
   } = await response.json();
-  console.log("token", username);
+  //   console.log("token: ", token);
   return token;
 };
 
@@ -55,6 +55,10 @@ export const register = async (username, password) => {
   const {
     data: { token },
   } = await response.json();
+
+  // Saving the user's identity in the browser
+  localStorage.setItem("token", token);
+
   return token;
 };
 
@@ -66,5 +70,6 @@ export const getUser = async (token) => {
     },
   });
   const { data: userObject } = await response.json();
+  console.log("userObject: ", userObject);
   return userObject;
 };

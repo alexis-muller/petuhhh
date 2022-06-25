@@ -54,7 +54,7 @@ const Posts = ({ token }) => {
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
       /> */}
-      <AddPost token={token} posts={posts} setPosts={setPosts} />
+      {/* <AddPost token={token} posts={posts} setPosts={setPosts} /> */}
 
       <div className="posts">
         {filteredPosts.length > 0 ? (

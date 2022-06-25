@@ -28,14 +28,13 @@ const Message = ({ token, _id, messages, setMessages }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
           className="messageInput"
-          type="text"
           value={content}
           onChange={(event) => setContent(event.target.value)}
           placeholder="Send a Message"
-        />
-        <button>Submit</button>
+        ></textarea>
+        <button className="buttonRight">Submit</button>
       </form>
     </>
   );

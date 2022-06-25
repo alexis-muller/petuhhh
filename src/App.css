@@ -9,9 +9,38 @@ article {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: white;
+  max-width: 19em;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 0.6em;
+}
+
+textarea {
+  min-height: 7em;
+}
+
+button {
+  padding: 0.6em;
+  border: none;
+  background: #8aacff;
+  color: white;
+}
+
+form button {
+  margin-top: 0.5em;
+}
+
+.buttonRight {
+  width: 10em;
+  align-self: flex-end;
 }
 
 .title {
@@ -27,7 +56,7 @@ form {
 .welcome {
   margin: 0 auto;
   padding: 13px 16px;
-  background: #2874cc;
+  background: #8aacff;
   color: #f1f1f1;
   top: 5%;
   width: 100%;
@@ -38,13 +67,14 @@ form {
   grid-template-columns: auto auto auto auto;
   grid-row-gap: 25px;
   grid-column-gap: 10px;
-  background-color: #2874cc;
+  background-color: #8aacff;
   padding: 10px 10px;
   color: white;
   font-size: 11.5pt;
   border: none;
   display: table;
   float: right;
+  font-weight: bold;
 }
 
 .logout:hover {
@@ -52,13 +82,14 @@ form {
 }
 .welcomeUser {
   padding-top: 0px;
-  background: #2874cc;
+  background: #8aacff;
   color: #f1f1f1;
 }
 
 .headerColor {
   color: white;
-  padding-right: 8px;
+  padding-right: 9.5px;
+  font-weight: bold;
 }
 
 .headerLinks {
@@ -68,7 +99,7 @@ form {
   flex-flow: row nowrap;
   /* justify-content: space-evenly; */
   justify-content: start;
-  background-color: #2874cc;
+  background-color: #8aacff;
   padding: 10px 60px;
 }
 
