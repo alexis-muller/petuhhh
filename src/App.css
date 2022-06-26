@@ -32,6 +32,7 @@ button {
   border: none;
   background: #8aacff;
   color: white;
+  cursor: pointer;
 }
 
 form button {
@@ -79,6 +80,7 @@ form button {
 
 .logout:hover {
   cursor: pointer;
+  color: black;
 }
 .welcomeUser {
   padding-top: 0px;
@@ -90,6 +92,10 @@ form button {
   color: white;
   padding-right: 9.5px;
   font-weight: bold;
+}
+
+.headerColor:hover {
+  color: black;
 }
 
 .headerLinks {
